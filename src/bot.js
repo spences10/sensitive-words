@@ -1,11 +1,11 @@
 const query = require('./helpers/queryStrings')
 const param = require('./helpers/twitParams')
-const rt = require('./helpers/retweet')
+const s = require('./helpers/search')
 
 console.log(param)
 console.log(query)
 
-rt
+s
   .then(data => {
     console.log(data)
   })

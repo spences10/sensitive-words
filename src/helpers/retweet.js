@@ -1,25 +1,19 @@
 const T = require('./T')
-const p = require('./twitParams')
+const s = require('./search')
 
-const prom = new Promise((resolve, reject) => {
-  // setTimeout(() => {
-  //   resolve('cool')
-  // }, 1000)
-  T.get('search/tweets', p, function (err, data) {
-    if (!err) {
-      resolve(data.statuses[0].id_str)
-    } else {
-      console.log(`Can't RETWEET:`, err)
-    }
-  })
-})
-
-module.exports = prom
+s
   .then(data => {
-    // console.log(data)
-    return data
+    let searchId = data
+    T.post('statuses/retweet/:id', {
+      id: searchId
+    }, function (err, response) {
+      if (err) { // if error while retweet
+        console.log(`ERROR! DUPLICATE TWEET`)
+      } else {
+        console.log(`RETWEET!`, response.retweeted_status.text)
+      }
+    })
   })
   .catch(err => {
     console.log(err)
   })
-
