@@ -1,7 +1,11 @@
+'use strict'
 const strings = require('./strings')
+const ura = require('unique-random-array')
 
-let hashtags = strings.searchQueryStrings.join(' OR ')
+let hashtags = ura(strings.searchQueryStrings)
 
-hashtags = '#100daysofcode OR #301daysofcode'
+// let hashtags = strings.searchQueryStrings.join(' OR ')
 
-module.exports = hashtags
+// hashtags = '#100daysofcode OR #301daysofcode'
+
+module.exports = hashtags()

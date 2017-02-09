@@ -1,16 +1,17 @@
+'use strict'
 const T = require('./T')
 const s = require('./search')
 
 s
   .then(data => {
-    const searchId = data
-    T.post('statuses/retweet/:id', {
+    let searchId = data
+    T.post('favorites/create', {
       id: searchId
     }, function (err, response) {
-      if (err) { // if error while retweet
-        console.log(`ERROR! DUPLICATE TWEET`)
+      if (err) { // if error while 'favorite'
+        console.log(`FAVORITE ERROR:`, err)
       } else {
-        console.log(`RETWEET!`, response.retweeted_status.text)
+        console.log(`FAVORITE`, response.text)
       }
     })
   })
