@@ -1,0 +1,25 @@
+{
+  "name": "@spences10/sensitive-words",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive words",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spences10/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Scott Spence <spences10apps@gmail.com> (https://spences10.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spences10/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/spences10/sensitive-words#readme"
+}
