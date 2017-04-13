@@ -3,7 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-exports.default = function () {
-  return 'hello world';
+var sensitiveWords = exports.sensitiveWords = function sensitiveWords(content, words) {
+  return content.replace(new RegExp(words.join('|'), 'gi'), '*****');
 };
