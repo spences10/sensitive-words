@@ -4,7 +4,15 @@
   "description": "Filter out a list of sensitive words",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d build",
+    "dev": "watch yarn build src",
+    "test": "jest",
+    "test:watch": "yarn test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,5 +29,11 @@
   "bugs": {
     "url": "https://github.com/spences10/sensitive-words/issues"
   },
-  "homepage": "https://github.com/spences10/sensitive-words#readme"
+  "homepage": "https://github.com/spences10/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^19.0.2",
+    "watch": "^1.0.2"
+  }
 }
