@@ -4,11 +4,11 @@
   "description": "Filter out a list of sensitive words",
   "main": "build/index.js",
   "scripts": {
+    "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
-    "dev": "watch yarn build src",
-    "test": "jest",
-    "test:watch": "yarn test -- --watch",
-    "prepublish": "yarn build",
+    "test": "jest src",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
     "release": "np"
   },
   "babel": {
