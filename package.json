@@ -7,7 +7,8 @@
     "build": "babel src -d build",
     "dev": "watch yarn build src",
     "test": "jest",
-    "test:watch": "yarn test -- --watch"
+    "test:watch": "yarn test -- --watch",
+    "prepublish": "yarn build"
   },
   "babel": {
     "presets": [
@@ -35,5 +36,6 @@
     "babel-preset-latest": "^6.24.1",
     "jest": "^19.0.2",
     "watch": "^1.0.2"
-  }
+  },
+  "dependencies": {}
 }
