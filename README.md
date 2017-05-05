@@ -1,5 +1,7 @@
 # Example
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/spences10/sensitive-words.svg)](https://greenkeeper.io/)
+
 ```shell
 $ yarn install sensitive-words -D
 ```
