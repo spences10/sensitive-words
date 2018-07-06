@@ -1,21 +1,46 @@
 {
-  "name": "node-module-testing",
-  "version": "0.0.1",
-  "description": "test modular bot stuff",
-  "main": "index.js",
+  "name": "@spences10/sensitive-words",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive words",
+  "main": "build/index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "standard && node index.js"
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest src",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
   },
-  "author": "Scott Spence",
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spences10/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Scott Spence <spences10apps@gmail.com> (https://spences10.github.io/)",
   "license": "MIT",
-  "devDependencies": {
-    "auto-install": "^1.7.3",
-    "standard": "^8.6.0"
+  "bugs": {
+    "url": "https://github.com/spences10/sensitive-words/issues"
   },
-  "dependencies": {
-    "dotenv": "^4.0.0",
-    "twit": "^2.2.5",
-    "unique-random-array": "^1.0.0"
+  "homepage": "https://github.com/spences10/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^22.0.0",
+    "np": "^3.0.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
   }
 }
