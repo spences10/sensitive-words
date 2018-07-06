@@ -29,7 +29,7 @@
   "homepage": "https://github.com/spences10/sensitive-words#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-preset-latest": "^6.24.1",
+    "babel-preset-env": "1.7.0",
     "jest": "^22.0.0",
     "np": "^3.0.0",
     "watch": "^1.0.2"
