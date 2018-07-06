@@ -11,11 +11,6 @@
     "prepublish": "npm run build",
     "release": "np"
   },
-  "babel": {
-    "presets": [
-      "latest"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/spences10/sensitive-words.git"
