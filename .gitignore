@@ -49,3 +49,5 @@ gen
 
 # Environment Variables
 .env
+
+build/
