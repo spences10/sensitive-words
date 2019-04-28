@@ -3905,9 +3905,9 @@ normalize-url@^3.1.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
 
-np@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/np/-/np-5.0.0.tgz#06997dd0547f21c2cd1f4349a1af2f87a182a627"
+np@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/np/-/np-5.0.1.tgz#54ac5347691d3dfc3ee0f0780d5a425ee2a692c1"
   dependencies:
     "@samverschueren/stream-to-observable" "^0.3.0"
     any-observable "^0.3.0"
@@ -3930,7 +3930,6 @@ np@5.0.0:
     npm-name "^5.0.1"
     onetime "^5.1.0"
     open "^6.1.0"
-    opn "^6.0.0"
     ow "^0.12.0"
     p-memoize "^3.1.0"
     p-timeout "^3.1.0"
@@ -4060,12 +4059,6 @@ onetime@^5.1.0:
 open@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/open/-/open-6.1.0.tgz#0e7e671b883976a4e5251b5d1ca905ab6f4be78f"
-  dependencies:
-    is-wsl "^1.1.0"
-
-opn@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/opn/-/opn-6.0.0.tgz#3c5b0db676d5f97da1233d1ed42d182bc5a27d2d"
   dependencies:
     is-wsl "^1.1.0"
 
