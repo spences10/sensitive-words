@@ -3967,9 +3967,9 @@ normalize-url@^4.1.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.3.0.tgz#9c49e10fc1876aeb76dba88bf1b2b5d9fa57b2ee"
 
-np@5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/np/-/np-5.1.1.tgz#85c999b6a2b969768b4fa062e2ceda9f1fbae2d1"
+np@5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/np/-/np-5.1.2.tgz#0339e9a28c6996f8dbc1fbf971b3f9aa9eb7bfea"
   dependencies:
     "@samverschueren/stream-to-observable" "^0.3.0"
     any-observable "^0.4.0"
